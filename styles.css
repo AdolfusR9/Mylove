@@ -1,0 +1,69 @@
+/* Estilos básicos */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff77ff, #ffccff);
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: #fff;
+    animation: backgroundAnimation 10s infinite alternate;
+}
+
+/* Animación para el fondo */
+@keyframes backgroundAnimation {
+    0% {
+        background: linear-gradient(135deg, #ff77ff, #ffccff);
+    }
+    100% {
+        background: linear-gradient(135deg, #ffccff, #ff77ff);
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    z-index: 10;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: pulse 1.5s infinite alternate;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #ffccff;
+    z-index: 10;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+/* Animación de pulso en el título */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.image-slider {
+    margin-top: 40px;
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
